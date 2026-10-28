@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sample Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fb;
+            color: #333;
+        }
+        header {
+            background-color: #174ea6;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        nav {
+            background-color: #123875;
+            padding: 12px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+        main {
+            padding: 30px;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #cccccc;
+        }
+        button {
+            background-color: #174ea6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>A simple website hosted on AWS EC2</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main id="home">
+        <h2>Our Products</h2>
+        <p>Explore our sample products below.</p>
+
+        <div class="products" id="products">
+            <div class="card">
+                <h3>Lipstick</h3>
+                <p>Price: ¥1,200</p>
+                <button onclick="showMessage('Lipstick')">View Product</button>
+            </div>
+            <div class="card">
+                <h3>Foundation</h3>
+                <p>Price: ¥2,000</p>
+                <button onclick="showMessage('Foundation')">View Product</button>
+            </div>
+            <div class="card">
+                <h3>Compact Powder</h3>
+                <p>Price: ¥1,500</p>
+                <button onclick="showMessage('Compact Powder')">View Product</button>
+            </div>
+        </div>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are learning to build and host websites.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@example.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Sample Website</p>
+    </footer>
+
+    <script>
+        function showMessage(product) {
+            alert("You selected: " + product);
+        }
+    </script>
+</body>
+</html>
